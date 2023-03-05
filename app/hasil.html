@@ -1,0 +1,13 @@
+<div id="data-container"></div>
+
+<script>
+  // Get data from localStorage
+  var data = JSON.parse(localStorage.getItem('formData'));
+  
+  // Display data
+  var dataContainer = document.getElementById('data-container');
+  dataContainer.innerHTML = 'Nama: ' + data.name + '<br>Email: ' + data.email;
+  
+  // Clear data from localStorage
+  localStorage.removeItem('formData');
+</script>
